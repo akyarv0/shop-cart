@@ -28,63 +28,96 @@
         <img src="./img/apple.svg" alt="" srcset="" width="50" />
       </div>
       <div class="shopcart">
-        <a href=""
-          ><span id="shopcart"
-            ><i class="fa-solid fa-cart-shopping fa-2xl"></i></span
-          ><span class="count">1</span></a
-        >
+        <button class="btn cart">
+          <span><i class="fa-solid fa-cart-shopping fa-2xl"></i></span
+          ><span class="count">0</span>
+        </button>
+        <table class="table">
+          <thead id="thead">
+            <tr>
+              <th scope="col">Img</th>
+              <th scope="col">Product</th>
+              <th scope="col" class="number">Count</th>
+              <th scope="col">Price</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            <tr class="apply">
+              <td>
+                <button class="btn btn-primary apply w-100 m-2">Apply</button>
+              </td>
+              <td class="sum-text w-25 m-2">SUMMARY:</td>
+              <td class="number-product">1</td>
+              <td class="shopcart-price-sum">100</td>
+              <td>
+                <i class="fa-solid fa-trash-can" style="color: #8a0e0e"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </header>
     <main>
       <div class="container row m-auto justify-content-center my-5 row-gap-5">
-          
-          
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="card" >
-                  <div class="image">
-                    <img src="./img/iphone-card-40-iphone15hero-202309.jpeg" class="card-img-top" alt="...">
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">iPhone 15</h5>
-                    <p class="card-price text-primary fw-bold">₺55599,00</p>
-                    <div class=" d-flex justify-content-evenly">
-                      <select id="adet" class="w-25">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select>
-                        
-                      <button class="btn btn-success text-emphasis">Buy</button>
-                  </div>
-                  </div>
-                </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="image">
+              <img
+                src="./img/iphone-card-40-iphone15hero-202309.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">iPhone 15</h5>
+              <p class="card-price text-primary fw-bold">₺55599,00</p>
+              <div class="d-flex justify-content-between">
+                <select
+                  class="form-select form-select-sm m-2"
+                  aria-label="Small select example"
+                >
+                  <option selected>Number of Products</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+
+                <button class="btn btn-success text-emphasis m-2">Buy</button>
+              </div>
+            </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="card ">
-                  <div class="image">
-                    <img src="./img/iphone-card-40-iphone13hero-202309.jpeg" class="card-img-top" alt="...">
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">iPhone 13</h5>
-                    <p class="card-price text-primary fw-bold">₺25499,90</p>
-                    <div class=" d-flex justify-content-evenly">
-                      <select id="adet" class="w-25">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select>
-                        
-                      <button class="btn btn-success text-emphasis">Buy</button>
-                  </div>
-                  </div>
-                </div>
-          </div>           
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="image">
+              <img
+                src="./img/iphone-card-40-iphone13hero-202309.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">iPhone 13</h5>
+              <p class="card-price text-primary fw-bold">₺25499,90</p>
+              <div class="d-flex justify-content-between">
+                <select
+                  class="form-select form-select-sm m-2"
+                  aria-label="Small select example"
+                >
+                  <option selected>Number of Products</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+
+                <button class="btn btn-success text-emphasis m-2">Buy</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </main>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -92,6 +125,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>
